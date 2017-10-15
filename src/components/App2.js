@@ -7,6 +7,7 @@ import StateExample from './StateExample';
 
 import Counter from './Counter';
 
+import ContractApp from './ContractApp';
 import KanbanBoard from './board/KanbanBoard';
 
 
@@ -67,6 +68,17 @@ let cardsList=[
   
   ];
 
+
+    const contacts=[
+        {name:"james",email:"test@naver.com"},
+        {name:"gate",email:"gate@naver.com"},
+        {name:"game",email:"game@naver.com"},
+        {name:"giant",email:"giant@naver.com"},
+        {name:"moon",email:"moon@naver.com"},
+        {name:"dull",email:"dull@naver.com"},
+        {name:"time",email:"time@naver.com"},
+        {name:"love",email:"love@naver.com"},
+    ];
 class App2 extends React.Component {
 
   
@@ -107,7 +119,11 @@ class App2 extends React.Component {
 
                 <Counter />
 
+                
+
                 <KanbanBoard cardsList={cardsList} />
+
+                <ContractApp contractsList={contacts}/> 
             </div>
         );
     }
